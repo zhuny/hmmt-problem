@@ -48,14 +48,33 @@
 
     <div id="tag">
       {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
+      <span class="tag">{{ tag }}</span>
       {% endfor %}
     </div>
-<div id="footer">
-  <hr>
-  <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a
-    href="https://twitter.com/mattgraham">mattgraham</a></span>
-</div>
+
+    {% if page.id %}
+    <div id="move-page">
+      <h4>다른 글 더보기</h4>
+      <ul>
+        {% if page.previous %}
+        <li>
+          <a href="{{ page.previous.url }}">이전글 - {{ page.previous.title }}</a>
+        </li>
+        {% endif %}
+        {% if page.next %}
+        <li>
+          <a href="{{ page.next.url }}">다음글 - {{ page.next.title }}</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div id="footer">
+      <hr>
+      <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a
+        href="https://twitter.com/mattgraham">mattgraham</a></span>
+    </div>
 
   </section>
 
