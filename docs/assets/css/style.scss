@@ -15,7 +15,7 @@ h1, h2, h3, h4 {
   }
 }
 
-#tag {
+#tags {
   margin-bottom: 8px;
 
   .tag {
@@ -26,6 +26,16 @@ h1, h2, h3, h4 {
 
     &:before {
       content: '#';
+    }
+  }
+}
+
+.posts {
+  .post-link {
+    .post-date {
+      font-size: 0.8em;
+      color: #7f7f7f;
+      padding-left: 8px;
     }
   }
 }
