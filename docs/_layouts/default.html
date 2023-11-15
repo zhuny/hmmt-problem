@@ -24,6 +24,10 @@
 
   <meta name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>
+    {{- site.title -}}
+    {%- if page.title %} - {{ page.title }}{% endif -%}
+  </title>
 </head>
 <body>
 <div id="header">
@@ -72,8 +76,15 @@
 
     <div id="footer">
       <hr>
-      <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a
-        href="https://twitter.com/mattgraham">mattgraham</a></span>
+      <span>
+        <a href="mailto://zhuny936772@gmail.com">Contact Me</a>
+      </span>
+      <br>
+      <br>
+      <span>
+        Hosted on GitHub Pages &mdash; Theme by
+        <a href="https://twitter.com/mattgraham">mattgraham</a>
+      </span>
     </div>
 
   </section>
