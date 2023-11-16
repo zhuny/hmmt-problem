@@ -52,7 +52,7 @@
 
     <div id="tags">
       {% for tag in page.tags %}
-        <a href="/tag/{{ tag }}/">
+        <a href="/tag/{{ tag | slugify }}/">
           <span class="tag">{{ tag }}</span>
         </a>
       {% endfor %}
