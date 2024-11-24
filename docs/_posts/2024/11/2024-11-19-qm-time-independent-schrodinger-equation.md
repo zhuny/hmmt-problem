@@ -39,3 +39,33 @@ $$\begin{align}\left[ x, \hat{p} \right] &= i\hbar \\ \left[\hat{a}_{-} , \hat{a
 The solution for this equation
 
 $$\begin{align}\psi_0 (x) &= \left( \frac{m\omega}{\pi\hbar} \right)^{1/4} e^{-\frac{mw}{2\hbar}x^2} \\ \psi_n (x) &= \frac{1}{\sqrt{n!}} \left(\hat{a}_{+} \right)^n \psi_0 (x) \end{align}$$
+
+## The free particle
+$V(x) = 0$, the general solution is
+
+$$\begin{align}\Psi(x, t) &= \frac{1}{\sqrt{2 \pi}} \int_{\infty}^{\infty} \psi(k) e^{i \left(kx - \frac{\hbar k^2}{2m}t\right)}dk \\ \psi(k) &= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty}\Psi(x, 0)e^{-ikx}dx\end{align}$$
+
+## The delta function potential
+$E < V(-\infty) \& V(+\infty)$ Then bound state, otherwise scattering state
+
+For given potential $V(x) = -\alpha \delta(x)$, $E<0$ (bound states)
+
+$$\psi(x) = \frac{\sqrt{m\alpha}}{\hbar} e^{-m\alpha|x|/\hbar^2}, E=-\frac{m\alpha^2}{2\hbar^2}$$
+
+$E>0$ (scattering states)
+
+$$\begin{align}\psi(x)&=Ae^{ikx}+Be^{-ikx}(x<0) \\ &=Fe^{ikx}(x>0)\end{align}$$
+
+with
+
+$$B=\frac{i\beta}{1-i\beta}A, F=\frac{1}{1-i\beta}A, \beta=\frac{m\alpha}{\hbar^2 k}$$
+
+and
+
+$$\begin{align}R&=\frac{|B|^2}{|A|^2} = \frac{1}{1+\left(2\hbar^2 E/m \alpha^2 \right)^2} \\ T&=\frac{|F|^2}{|A|^2} = \frac{1}{1+\left( m\alpha^2 / 2\hbar^2 E \right)} \end{align}$$
+
+$R$ is reflection coefficient, $T$ is transmission coefficient.
+
+## The finite square well
+
+$$V(X) = -V_0 (|x| < a), 0 (|x| > a)$$
