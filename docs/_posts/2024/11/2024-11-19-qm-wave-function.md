@@ -15,12 +15,12 @@ $$i\hbar \frac{\partial\Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial^2
 ## Normalization
 $\left\| \Psi(x, t) \right\|^2$ is the probability density.
 
-$$\int_{-\infity}^{+\infity} \left| \Psi(x, t) \right|^2 dx = 1$$
+$$\int_{-\infty}^{+\infty} \left| \Psi(x, t) \right|^2 dx = 1$$
 
 ## Momentum
 Average position and momentum
 
-$$\left< x \right> = \int_{-\infity}^{+\infity} x \left | \Psi(x, t) \right |^2 dx$$
+$$\left< x \right> = \int_{-\infty}^{+\infty} x \left | \Psi(x, t) \right |^2 dx$$
 
 $$\left< p \right> = m \frac{d \left< x \right>}{dt} = -i\hbar \int \left( \Psi^* \frac{\partial \Psi}{\partial x} \right)dx$$
 
